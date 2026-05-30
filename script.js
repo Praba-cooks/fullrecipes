@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const checkbox = item.querySelector('input[type="checkbox"]');
         const label = item.querySelector('label');
 
-        // Allows easy clicking anywhere across the parent checklist container
         item.addEventListener('click', (e) => {
             if (e.target !== checkbox && e.target !== label) {
                 checkbox.checked = !checkbox.checked;
@@ -17,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
             handleVisualState(item, checkbox.checked);
         });
 
-        // Trigger action on raw input changes
         checkbox.addEventListener('change', () => {
             handleVisualState(item, checkbox.checked);
         });
