@@ -1,14 +1,15 @@
-// --- High-Performance Dynamic Website Controller ---
+// --- High-Performance Combined Search & Tab Filtering System ---
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Reactive Checkbox / Reagents Cross-Out Engine
+    // 1. Reactive Checkbox / Reagents Cross-Out System
     const checkItems = document.querySelectorAll('.check-item');
     
     checkItems.forEach(item => {
         const checkbox = item.querySelector('input[type="checkbox"]');
         const label = item.querySelector('label');
 
+        // Click wrapper for ease of target engagement
         item.addEventListener('click', (e) => {
             if (e.target !== checkbox && e.target !== label) {
                 checkbox.checked = !checkbox.checked;
@@ -29,42 +30,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 2. High-Fidelity Realtime Filtration Search Engine
+    // 2. Dual-Layer Matrix Filter Logic (Handles active Tab + Search terms concurrently)
     const searchInput = document.getElementById('siteSearch');
+    const tabButtons = document.querySelectorAll('.tab-btn');
     const cards = document.querySelectorAll('.recipe-card');
 
-    searchInput.addEventListener('input', (e) => {
-        const query = e.target.value.toLowerCase().trim();
+    function filterMatrices() {
+        const query = searchInput.value.toLowerCase().trim();
+        const activeTab = document.querySelector('.tab-btn.active').getAttribute('data-filter');
 
         cards.forEach(card => {
+            const cardCategory = card.getAttribute('data-category');
             const visibleText = card.textContent.toLowerCase();
-            if (visibleText.includes(query)) {
+            
+            const matchesTab = (activeTab === 'all' || cardCategory === activeTab);
+            const matchesSearch = (query === '' || visibleText.includes(query));
+
+            if (matchesTab && matchesSearch) {
                 card.style.display = "block";
+                // Short intentional delay to allow CSS state injection
+                setTimeout(() => card.style.opacity = "1", 10);
             } else {
                 card.style.display = "none";
+                card.style.opacity = "0";
             }
         });
-    });
+    }
 
-    // 3. Category Filter Tabs Mechanics
-    const tabButtons = document.querySelectorAll('.tab-btn');
+    // Event Triggers
+    searchInput.addEventListener('input', filterMatrices);
 
     tabButtons.forEach(button => {
         button.addEventListener('click', () => {
             tabButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
-
-            const filterValue = button.getAttribute('data-filter');
-
-            cards.forEach(card => {
-                const cardCategory = card.getAttribute('data-category');
-                
-                if (filterValue === 'all' || cardCategory === filterValue) {
-                    card.style.display = "block";
-                } else {
-                    card.style.display = "none";
-                }
-            });
+            filterMatrices();
         });
     });
 });
