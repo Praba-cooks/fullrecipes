@@ -8,17 +8,10 @@
 </head>
 <body>
 
-    <!-- Cybernetic Lab Terminal Overlay Lines -->
     <div class="scanline"></div>
     <div class="top-glow-bar"></div>
 
-    <!-- Main Tech Laboratory Header -->
     <header>
-        <!-- Pure CSS Hexagonal / Molecular Bonding Accent Nodes -->
-        <div class="molecule-node node-1"></div>
-        <div class="molecule-node node-2"></div>
-        <div class="molecule-node node-3"></div>
-
         <div class="header-container">
             <span class="academy-tag">System Status: Operational // Core Chemistry</span>
             <h1>Dr. Prabakaran Kamalanathan</h1>
@@ -29,21 +22,18 @@
         </div>
     </header>
 
-    <!-- Lab Terminal Control Hub -->
     <div class="control-panel">
         <input type="text" id="siteSearch" class="premium-search" placeholder="⚡ Scan active reagents, chemical bonds, or protocol codes...">
         <div class="filter-tabs">
             <button class="tab-btn active" data-filter="all">ALL FORMULAS</button>
             <button class="tab-btn" data-filter="buttermilk">EMULSIONS: BUTTERMILK</button>
-            <button class="tab-btn" data-filter="solutions">AQUEOUS SOLUTIONS</button>
+            <button class="tab-btn" data-filter="dessert">THERMAL PHASE: DESSERTS</button>
         </div>
     </div>
 
-    <!-- Active Reaction Stream -->
     <main id="experimentStream">
 
-        <!-- PROTOCOL CARD: PUDINA BUTTERMILK -->
-        <article class="recipe-card vibrant-card" data-category="buttermilk">
+        <article class="recipe-card" data-category="buttermilk">
             <div class="card-badge-row">
                 <span class="category-badge badge-buttermilk">EMULSION MATRIX</span>
                 <span class="taxonomy-badge">SPECIMEN ID: MENTHA-S</span>
@@ -52,7 +42,6 @@
             <h2 class="recipe-title">Pudina Buttermilk <span class="scientific-title">// Compound: Mint-Infused Lipid Solution</span></h2>
             <p class="recipe-description">An analysis of endothermic cooling dynamics. This protocol utilizes the volatile, organic essential oils found in fresh mint leaves, bound within a fermented dairy emulsion, to induce an immediate systemic thermodynamic cooling effect.</p>
 
-            <!-- Reactor Parameter Dashboard -->
             <div class="metrics-dashboard">
                 <div class="metric-node">
                     <span class="label">SYNTHESIS TIME</span>
@@ -68,70 +57,116 @@
                 </div>
             </div>
 
-            <!-- Balanced Tech Split Grid -->
             <div class="recipe-grid">
-                
-                <!-- Left Column: Reagents Checklist -->
                 <div class="grid-section reagents-pane">
                     <h3>🧪 REAGENT COMPOSITION</h3>
                     <ul class="interactive-checklist">
                         <li class="check-item">
-                            <input type="checkbox" id="reagent-1">
-                            <label for="reagent-1">1 Cup Fermented *Lactobacillus* Culture Matrix (Curd)</label>
+                            <input type="checkbox" id="bm-reagent-1">
+                            <label for="bm-reagent-1">1 Cup Fermented *Lactobacillus* Culture Matrix (Curd)</label>
                         </li>
                         <li class="check-item">
-                            <input type="checkbox" id="reagent-2">
-                            <label for="reagent-2">1.5 Cups Chilled H₂O (Aqueous Solvent Medium)</label>
+                            <input type="checkbox" id="bm-reagent-2">
+                            <label for="bm-reagent-2">1.5 Cups Chilled H₂O (Aqueous Solvent Medium)</label>
                         </li>
                         <li class="check-item">
-                            <input type="checkbox" id="reagent-3">
-                            <label for="reagent-3">15-20 Units Fresh Pudina Leaves (Volatile Carvone Source)</label>
+                            <input type="checkbox" id="bm-reagent-3">
+                            <label for="bm-reagent-3">15-20 Units Fresh Pudina Leaves (Volatile Carvone Source)</label>
                         </li>
                         <li class="check-item">
-                            <input type="checkbox" id="reagent-4">
-                            <label for="reagent-4">1 Split Green Chili (Capsaicin Irritant Catalyst)</label>
+                            <input type="checkbox" id="bm-reagent-4">
+                            <label for="bm-reagent-4">1 Split Green Chili (Capsaicin Irritant Catalyst)</label>
                         </li>
                         <li class="check-item">
-                            <input type="checkbox" id="reagent-5">
-                            <label for="reagent-5">1/2 tsp Roasted *Cuminum cyminum* Aromatic Extract</label>
-                        </li>
-                        <li class="check-item">
-                            <input type="checkbox" id="reagent-6">
-                            <label for="reagent-6">Pink Himalayan & Black Salt (Crystalline Mineral Catalysts)</label>
+                            <input type="checkbox" id="bm-reagent-5">
+                            <label for="bm-reagent-5">1/2 tsp Roasted *Cuminum cyminum* Aromatic Extract</label>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Right Column: Protocol Instructions -->
                 <div class="grid-section protocol-pane">
                     <h3>🧬 CORE METHOD PROTOCOL</h3>
                     <ol class="protocol-list">
-                        <li>
-                            <strong class="step-title">01 / Cellular Dissolution</strong> Apply intense mechanical shear force to the fresh mint leaves and green chili to rupture cellular walls, freeing the active volatile oils.
-                        </li>
-                        <li>
-                            <strong class="step-title">02 / Emulsion Homogenization</strong> Agitate the fermented curd matrix using a high-velocity rotational blender or traditional wooden churner until completely fluid.
-                        </li>
-                        <li>
-                            <strong class="step-title">03 / Aqueous Dilution</strong> Slowly blend the 274K chilled H₂O into the lipid base, maintaining constant velocity to prevent phase separation.
-                        </li>
-                        <li>
-                            <strong class="step-title">04 / Catalyst Inversion</strong> Fold in the processed mint-capsaicin compound paste, roasted cumin molecules, and crystalline mineral salts.
-                        </li>
-                        <li>
-                            <strong class="step-title">05 / Kinetic Aeration</strong> Froth the solution surface rapidly for 30 seconds to generate a stable gas-in-liquid micro-foam matrix. Dispense directly into glasses.
-                        </li>
+                        <li><strong class="step-title">01 / Cellular Dissolution</strong> Apply mechanical shear force to mint leaves to rupture cellular walls, freeing volatile oils.</li>
+                        <li><strong class="step-title">02 / Emulsion Homogenization</strong> Agitate the fermented curd matrix until completely fluid.</li>
+                        <li><strong class="step-title">03 / Aqueous Dilution</strong> Blend 274K H₂O into the lipid base, maintaining constant velocity to prevent phase separation.</li>
                     </ol>
                 </div>
+            </div>
+        </article>
 
+        <article class="recipe-card" data-category="dessert">
+            <div class="card-badge-row">
+                <span class="category-badge badge-dessert">SOLID PHASE METAMORPHOSIS</span>
+                <span class="taxonomy-badge">SPECIMEN ID: TN-SOOJI-L</span>
+            </div>
+            
+            <h2 class="recipe-title">Tamil Nadu Style Rava Laddu <span class="scientific-title">// Compound: Crystallized Semolina Spheres</span></h2>
+            <p class="recipe-description">A study in thermal desiccation, lipid binding, and high-density molecular compaction. Roasted semolina granules undergo precise geometric configuration manipulation, bound into solid spherical structures using clarified saturated lipids (Ghee).</p>
+
+            <div class="metrics-dashboard">
+                <div class="metric-node">
+                    <span class="label">SYNTHESIS TIME</span>
+                    <strong class="value">25 MINS</strong>
+                </div>
+                <div class="metric-node">
+                    <span class="label">HEAT COEFFICIENT</span>
+                    <strong class="value">HIGH (THERMAL ROAST)</strong>
+                </div>
+                <div class="metric-node">
+                    <span class="label">MOLECULAR YIELD</span>
+                    <strong class="value">10-12 REACTION SPHERES</strong>
+                </div>
+            </div>
+
+            <div class="recipe-grid">
+                <div class="grid-section reagents-pane">
+                    <h3>🧪 REAGENT COMPOSITION</h3>
+                    <ul class="interactive-checklist">
+                        <li class="check-item">
+                            <input type="checkbox" id="laddu-reagent-1">
+                            <label for="laddu-reagent-1">1 Cup Fine Semolina / Rava (Granulated Carbohydrate Matrix)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="laddu-reagent-2">
+                            <label for="laddu-reagent-2">3/4 Cup Sucrose Crystals (Fine Ground Sugar)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="laddu-reagent-3">
+                            <label for="laddu-reagent-3">1/4 Cup Saturated Clarified Lipids (Pure Warm Ghee)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="laddu-reagent-4">
+                            <label for="laddu-reagent-4">2-3 tbsp Heat-Treated Whole Milk (Liquid Binding Reagent)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="laddu-reagent-5">
+                            <label for="laddu-reagent-5">10 Cashew Fractions & Dried Vitis Vinifera (Raisin Catalysts)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="laddu-reagent-6">
+                            <label for="laddu-reagent-6">1/2 tsp Crushed Elettaria Cardamomum Powder (Aromatic Isomer)</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid-section protocol-pane">
+                    <h3>🧬 CORE METHOD PROTOCOL</h3>
+                    <ol class="protocol-list">
+                        <li><strong class="step-title">01 / Thermal Granular Activation</strong> Roast the Rava in a dry vessel on a low thermal setting until aromatic. Prevent scorching to preserve carbohydrate integrity, then set aside to cool.</li>
+                        <li><strong class="step-title">02 / Lipid Catalyst Fusion</strong> Melt the clarified lipids (Ghee) in an auxiliary chamber. Introduce cashew fractions and raisin catalysts, roasting until an exothermic color change occurs.</li>
+                        <li><strong class="step-title">03 / Dry Powder Homogenization</strong> Pulse the roasted Rava and sucrose crystals together in a mechanical mill until a semi-fine particulate state is achieved. Blend in cardamomum powder.</li>
+                        <li><strong class="step-title">04 / Saturated Binding Fusion</strong> Pour the warm liquefied ghee along with the roasted nut catalysts directly into the dry particulate mixture, blending rapidly with a tool.</li>
+                        <li><strong class="step-title">05 / High-Pressure Geometric Compaction</strong> Add drops of warm milk to activate cohesive bonding forces. Take small fractions of the warm mixture into your hand and apply steady, centralized physical pressure to compact the particles into smooth, dense spheres. Allow to solidify.</li>
+                    </ol>
+                </div>
             </div>
         </article>
 
     </main>
 
-    <!-- Lab Footer Platform -->
     <footer>
-        <p>SYSTEM CORE V3.5 // &copy; 2026 Dr. Prabakaran Kamalanathan. All Rights Reserved. </p>
+        <p>SYSTEM CORE V3.5 // &copy; 2026 Dr. Prabakaran Kamalanathan. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
