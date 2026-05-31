@@ -105,6 +105,7 @@ header h1 {
 .filter-tabs {
     display: flex;
     gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .tab-btn {
@@ -172,6 +173,12 @@ main {
     background: rgba(255, 122, 0, 0.15);
     color: var(--accent-orange);
     border: 1px solid var(--accent-orange);
+}
+
+.badge-rice {
+    background: rgba(234, 179, 8, 0.15);
+    color: #eab308;
+    border: 1px solid #eab308;
 }
 
 .taxonomy-badge {
@@ -300,6 +307,10 @@ main {
 
 article[data-category="dessert"] .step-title {
     color: var(--accent-orange);
+}
+
+article[data-category="rice"] .step-title {
+    color: #eab308;
 }
 
 /* Footer Element */
