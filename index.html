@@ -8,9 +8,11 @@
 </head>
 <body>
 
+    <!-- Cybernetic Lab Terminal Overlay Lines -->
     <div class="scanline"></div>
     <div class="top-glow-bar"></div>
 
+    <!-- Main Tech Laboratory Header -->
     <header>
         <div class="header-container">
             <span class="academy-tag">System Status: Operational // Core Chemistry</span>
@@ -22,17 +24,21 @@
         </div>
     </header>
 
+    <!-- Lab Terminal Control Hub (Category Filtering Modules) -->
     <div class="control-panel">
         <input type="text" id="siteSearch" class="premium-search" placeholder="⚡ Scan active reagents, chemical bonds, or protocol codes...">
         <div class="filter-tabs">
             <button class="tab-btn active" data-filter="all">ALL FORMULAS</button>
             <button class="tab-btn" data-filter="buttermilk">EMULSIONS: BUTTERMILK</button>
             <button class="tab-btn" data-filter="dessert">THERMAL PHASE: DESSERTS</button>
+            <button class="tab-btn" data-filter="rice">STARCH POLYMERS: VARIETY RICE</button>
         </div>
     </div>
 
+    <!-- Active Reaction Stream -->
     <main id="experimentStream">
 
+        <!-- CATEGORY 1: PUDINA BUTTERMILK -->
         <article class="recipe-card" data-category="buttermilk">
             <div class="card-badge-row">
                 <span class="category-badge badge-buttermilk">EMULSION MATRIX</span>
@@ -95,6 +101,7 @@
             </div>
         </article>
 
+        <!-- CATEGORY 2: TAMIL NADU RAVA LADDU -->
         <article class="recipe-card" data-category="dessert">
             <div class="card-badge-row">
                 <span class="category-badge badge-dessert">SOLID PHASE METAMORPHOSIS</span>
@@ -158,6 +165,240 @@
                         <li><strong class="step-title">03 / Dry Powder Homogenization</strong> Pulse the roasted Rava and sucrose crystals together in a mechanical mill until a semi-fine particulate state is achieved. Blend in cardamomum powder.</li>
                         <li><strong class="step-title">04 / Saturated Binding Fusion</strong> Pour the warm liquefied ghee along with the roasted nut catalysts directly into the dry particulate mixture, blending rapidly with a tool.</li>
                         <li><strong class="step-title">05 / High-Pressure Geometric Compaction</strong> Add drops of warm milk to activate cohesive bonding forces. Take small fractions of the warm mixture into your hand and apply steady, centralized physical pressure to compact the particles into smooth, dense spheres. Allow to solidify.</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- CATEGORY 3: VARIETY RICE MATRIX -->
+        
+        <!-- SUB-SPECIMEN 1: TOMATO RICE -->
+        <article class="recipe-card" data-category="rice">
+            <div class="card-badge-row">
+                <span class="category-badge badge-rice">STARCH POLYMER MATRIX</span>
+                <span class="taxonomy-badge">SPECIMEN ID: THAKKALI-SADAM</span>
+            </div>
+            
+            <h2 class="recipe-title">Thakkali Sadam <span class="scientific-title">// Compound: Acidic Lycopene Starch Infusion (Tomato Rice)</span></h2>
+            <p class="recipe-description">A protocol detailing the reduction of acidic lycopene compounds into a soft, gelatinized *Oryza sativa* (Rice) starch polymer network, balanced via thermal alkaline spice stabilization.</p>
+
+            <div class="metrics-dashboard">
+                <div class="metric-node">
+                    <span class="label">SYNTHESIS TIME</span>
+                    <strong class="value">30 MINS</strong>
+                </div>
+                <div class="metric-node">
+                    <span class="label">PH LEVELS</span>
+                    <strong class="value">4.5 (ACIDIC ACID MATRIX)</strong>
+                </div>
+                <div class="metric-node">
+                    <span class="label">STARCH PROFILE</span>
+                    <strong class="value">NON-STICK SEPARATED GRAINS</strong>
+                </div>
+            </div>
+
+            <div class="recipe-grid">
+                <div class="grid-section reagents-pane">
+                    <h3>🧪 REAGENT COMPOSITION</h3>
+                    <ul class="interactive-checklist">
+                        <li class="check-item">
+                            <input type="checkbox" id="tr-1"><label for="tr-1">1 Cup Pre-boiled Long Grain Starch Matrix (Rice)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="tr-2"><label for="tr-2">3 Large Solanum lycopersicum Units (Finely Chopped Tomato Acid)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="tr-3"><label for="tr-3">1 Medium Allium cepa (Slivered Onion Catalyst)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="tr-4"><label for="tr-4">1 tbsp Sesamum indicum Extract (Pure Gingelly Oil medium)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="tr-5"><label for="tr-5">Spice Matrix: Brassica nigra (Mustard), Bengal Gram, Turmeric, Chili Powder</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid-section protocol-pane">
+                    <h3>🧬 CORE METHOD PROTOCOL</h3>
+                    <ol class="protocol-list">
+                        <li><strong class="step-title">01 / Lipid Splitting Catalyst</strong> Heat gingelly oil. Introduce mustard seeds until snapping kinetic activity is reached, then fry gram lentils until golden.</li>
+                        <li><strong class="step-title">02 / Lycopene Dehydration</strong> Introduce onions, followed by tomatoes and turmeric. Apply thermal energy until cell walls collapse and excess water content evaporates, leaving a thick paste (Thokku).</li>
+                        <li><strong class="step-title">03 / Homogeneous Dispersion</strong> Fold the pre-cooked separated starch grains into the acidic paste matrix gently, ensuring no structural rupture of the rice grains.</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- SUB-SPECIMEN 2: COCONUT RICE -->
+        <article class="recipe-card" data-category="rice">
+            <div class="card-badge-row">
+                <span class="category-badge badge-rice">STARCH POLYMER MATRIX</span>
+                <span class="taxonomy-badge">SPECIMEN ID: THENGAI-SADAM</span>
+            </div>
+            
+            <h2 class="recipe-title">Thengai Sadam <span class="scientific-title">// Compound: Medium-Chain Triglyceride Starch Fusion (Coconut Rice)</span></h2>
+            <p class="recipe-description">A delicate synthesis utilizing non-thermal grated endosperm tissue from *Cocos nucifera*. Lipids are bound to grain surfaces via brief low-temperature heat treatment to prevent oil separation.</p>
+
+            <div class="metrics-dashboard">
+                <div class="metric-node">
+                    <span class="label">SYNTHESIS TIME</span>
+                    <strong class="value">20 MINS</strong>
+                </div>
+                <div class="metric-node">
+                    <span class="label">LIPID DENSITY</span>
+                    <strong class="value">HIGH (NATURAL LAURIC ACID)</strong>
+                </div>
+                <div class="metric-node">
+                    <span class="label">THERMAL LIMIT</span>
+                    <strong class="value">LOW HEAT (ANTI-SCORCH)</strong>
+                </div>
+            </div>
+
+            <div class="recipe-grid">
+                <div class="grid-section reagents-pane">
+                    <h3>🧪 REAGENT COMPOSITION</h3>
+                    <ul class="interactive-checklist">
+                        <li class="check-item">
+                            <input type="checkbox" id="cr-1"><label for="cr-1">1 Cup Fluffy Boiled Rice Matrix (Cooled completely)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="cr-2"><label for="cr-2">1/2 Cup Fresh Grated Cocos nucifera Endosperm (Flaked Coconut)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="cr-3"><label for="cr-3">1 tbsp Pure Pressed Coconut Lipid Medium (Coconut Oil)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="cr-4"><label for="cr-4">2 Ginger fractions & Dried Red Capsicum pods (Chili)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="cr-5"><label for="cr-5">Aromatic Phase: Fresh Murraya koenigii (Curry leaves), Cashews</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid-section protocol-pane">
+                    <h3>🧬 CORE METHOD PROTOCOL</h3>
+                    <ol class="protocol-list">
+                        <li><strong class="step-title">01 / Aromatic Infusion</strong> Heat coconut oil. Crack mustard seeds, then roast cashews, ginger, and curry leaves to release aromatic volatile essences.</li>
+                        <li><strong class="step-title">02 / Low-Temperature Desiccation</strong> Lower heat parameters. Introduce grated coconut flakes. Agitate continuously for 120 seconds to eliminate light surface moisture without triggering a browning reaction.</li>
+                        <li><strong class="step-title">03 / Polymer Integration</strong> Introduce cooled starch matrix (rice) and salt. Blend uniformly to trap coconut aromatic particles along the grain strands.</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- SUB-SPECIMEN 3: TAMARIND RICE -->
+        <article class="recipe-card" data-category="rice">
+            <div class="card-badge-row">
+                <span class="category-badge badge-rice">STARCH POLYMER MATRIX</span>
+                <span class="taxonomy-badge">SPECIMEN ID: PULI-SADAM</span>
+            </div>
+            
+            <h2 class="recipe-title">Puli Sadam <span class="scientific-title">// Compound: Concentrated Tartaric Acid Starch Glaze (Tamarind Rice)</span></h2>
+            <p class="recipe-description">A high-density traditional Tamil Nadu synthesis. Concentrated tartaric acid undergoes paste transformation via lipid preservation and custom phenolic spice milling to create a deep-profile grain coating.</p>
+
+            <div class="metrics-dashboard">
+                <div class="metric-node">
+                    <span class="label">SYNTHESIS TIME</span>
+                    <strong class="value">40 MINS</strong>
+                </div>
+                <div class="metric-node">
+                    <span class="label">SHELF STABILITY</span>
+                    <strong class="value">HIGH (ORGANIC PASTE CONCENTRATE)</strong>
+                </div>
+                <div class="metric-node">
+                    <span class="label">SPICE COMPLEX</span>
+                    <strong class="value">PHENOLIC & ALKANOID MATRIX</strong>
+                </div>
+            </div>
+
+            <div class="recipe-grid">
+                <div class="grid-section reagents-pane">
+                    <h3>🧪 REAGENT COMPOSITION</h3>
+                    <ul class="interactive-checklist">
+                        <li class="check-item">
+                            <input type="checkbox" id="pr-1"><label for="pr-1">1 Cup Cooled Steamed Rice (Infused with 1 tsp oil)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="pr-2"><label for="pr-2">1 Lemon-sized sphere of Tamarindus indica (Extracted in hot H₂O)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="pr-3"><label for="pr-3">3 tbsp Dense Sesamum indicum Oil (Gingelly Oil)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="pr-4"><label for="pr-4">Roasted Powder Specimen: Coriander, Fenugreek, Sesame, Red Chili</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="pr-5"><label for="pr-5">Crunch Matrix: Groundnuts (Peanuts), Chana Gram, Asafoetida resin</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid-section protocol-pane">
+                    <h3>🧬 CORE METHOD PROTOCOL</h3>
+                    <ol class="protocol-list">
+                        <li><strong class="step-title">01 / Spice Powder Pyrolysis</strong> Dry-roast fenugreek, coriander, sesame seeds, and chilis. Mill them down into an ultra-fine aromatic complex powder.</li>
+                        <li><strong class="step-title">02 / Tartaric Reduction (Pulikachal)</strong> Heat oil. Temper mustard, grams, peanuts, and asafoetida. Pour in the aqueous tamarind extract. Simmer under constant heat until fluid density triples and oil floats cleanly on top. Stir in your milled spice powder.</li>
+                        <li><strong class="step-title">03 / Adsorption Phase</strong> Layer the thick dark glaze over the cooled rice structures. Coat thoroughly, allowing starch cells to slowly adsorb the acid-lipid compound over hours.</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- SUB-SPECIMEN 4: LEMON RICE -->
+        <article class="recipe-card" data-category="rice">
+            <div class="card-badge-row">
+                <span class="category-badge badge-rice">STARCH POLYMER MATRIX</span>
+                <span class="taxonomy-badge">SPECIMEN ID: ELUMICHAI-SADAM</span>
+            </div>
+            
+            <h2 class="recipe-title">Elumichai Sadam <span class="scientific-title">// Compound: Citric Acid Curcumin Glaze (Lemon Rice)</span></h2>
+            <p class="recipe-description">A thermodynamic processing system featuring heat-sensitive organic compounds. Raw citric acid fractions are introduced post-thermal activity to prevent degradation into structural bitterness.</p>
+
+            <div class="metrics-dashboard">
+                <div class="metric-node">
+                    <span class="label">SYNTHESIS TIME</span>
+                    <strong class="value">20 MINS</strong>
+                </div>
+                <div class="metric-node">
+                    <span class="label">CITRIC PROFILE</span>
+                    <strong class="value">BRIGHT EXTRACT (NON-HEATED)</strong>
+                </div>
+                <div class="metric-node">
+                    <span class="label">CHROMIC FACTOR</span>
+                    <strong class="value">CURCUMIN HIGH-VIBRANCY YELLOW</strong>
+                </div>
+            </div>
+
+            <div class="recipe-grid">
+                <div class="grid-section reagents-pane">
+                    <h3>🧪 REAGENT COMPOSITION</h3>
+                    <ul class="interactive-checklist">
+                        <li class="check-item">
+                            <input type="checkbox" id="lr-1"><label for="lr-1">1 Cup Cooked White Starch Grains (Cooled to ambient room temp)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="lr-2"><label for="lr-2">3 tbsp Fresh Citrus limon Extract (Squeezed Lemon Juice)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="lr-3"><label for="lr-3">1/2 tsp Curcuma longa Powder (High-potency Yellow Turmeric)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="lr-4"><label for="lr-4">1.5 tbsp Oil Medium, Mustard seeds, White Lentil (Urad Dal)</label>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" id="lr-5"><label for="lr-5">Texture Phase: 2 tbsp Crispy Roasted Peanuts, Green Chilis, Curry leaves</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid-section protocol-pane">
+                    <h3>🧬 CORE METHOD PROTOCOL</h3>
+                    <ol class="protocol-list">
+                        <li><strong class="step-title">01 / Chromophoric Tempering</strong> Heat oil. Sauté mustard seeds, urad dal, peanuts, split chilis, and curry leaves. Add turmeric powder to instantly activate the bright yellow curcumin chromophores inside the fat medium. Turn off thermal grid completely.</li>
+                        <li><strong class="step-title">02 / Cold Citric Introduction</strong> Allow the seasoned lipid mix to cool slightly. Pour in the raw lemon juice extract. *Crucial:* Do not apply heat here to avoid structural denaturation of vitamin C compounds.</li>
+                        <li><strong class="step-title">03 / Mass Coloration Transfer</strong> Empty the yellow citrus-lipid glaze over the cooked rice. Toss light-handedly until all white starch grains transition completely to a uniform vibrant gold color profile.</li>
                     </ol>
                 </div>
             </div>
