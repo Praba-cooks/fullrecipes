@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const checkbox = item.querySelector('input[type="checkbox"]');
         const label = item.querySelector('label');
 
-        // Click wrapper for ease of target engagement
         item.addEventListener('click', (e) => {
             if (e.target !== checkbox && e.target !== label) {
                 checkbox.checked = !checkbox.checked;
@@ -30,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 2. Dual-Layer Matrix Filter Logic (Handles active Tab + Search terms concurrently)
+    // 2. Dual-Layer Matrix Filter Logic
     const searchInput = document.getElementById('siteSearch');
     const tabButtons = document.querySelectorAll('.tab-btn');
     const cards = document.querySelectorAll('.recipe-card');
@@ -48,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (matchesTab && matchesSearch) {
                 card.style.display = "block";
-                // Short intentional delay to allow CSS state injection
                 setTimeout(() => card.style.opacity = "1", 10);
             } else {
                 card.style.display = "none";
