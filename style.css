@@ -181,6 +181,12 @@ main {
     border: 1px solid #eab308;
 }
 
+.badge-biryani {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border: 1px solid #ef4444;
+}
+
 .taxonomy-badge {
     font-size: 0.7rem;
     color: var(--text-muted);
@@ -311,6 +317,10 @@ article[data-category="dessert"] .step-title {
 
 article[data-category="rice"] .step-title {
     color: #eab308;
+}
+
+article[data-category="biryani"] .step-title {
+    color: #ef4444;
 }
 
 /* Footer Element */
